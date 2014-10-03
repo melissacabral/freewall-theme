@@ -1,0 +1,68 @@
+/*
+Theme Name: Freewal Grid Theme
+Author: Melissa Cabral
+Version: 0.1
+Description: Fluid Grid Mixed Width demo!
+*/
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body{
+	font-family: sans-serif;
+	max-width:1000px;
+	width:95%;
+	margin: auto;
+}
+.item{
+	background-size:cover;
+	background-position:center center;
+}
+.item.img-small{
+	width:200px;
+	height:100px;
+	background-color: #eee;/*just for testing*/
+}
+.item.img-large{
+	width:400px;
+	height:200px;
+	background-color: #ccc;/*just for testing*/
+}
+.item.img-skinny{
+	width:500px;
+	height:100px;
+	background:#aaa;/*just for testing*/
+}
+.item img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*rollover titles*/
+.item a{
+	color: white;
+	text-decoration: none;
+}
+.item h2{
+	font-size:1.3em;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.5);
+	padding: .5em;
+	margin: 0;
+	text-align: center;
+	opacity: 0;
+
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
+}
+.item:hover h2{
+	opacity:1;
+}
