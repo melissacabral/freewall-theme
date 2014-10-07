@@ -9,11 +9,8 @@
 		<h1><?php  the_title(); ?></h1>
 		<?php the_content(); ?>
 		<?php wp_link_pages(); ?>
-		<div><?php the_tags(); ?><?php the_category(); ?></div>
-
+		
 	</article>
-
-	<?php comments_template(); ?>
 <?php endwhile; ?>
 <?php else: ?>
 	Sorry, no posts found!
