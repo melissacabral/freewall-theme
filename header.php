@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="utf-8" />
+	<meta <?php bloginfo( 'charset' ); ?> />
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
-	<title><?php wp_title(); ?></title>
+	<title><?php wp_title( ' :: ', true, 'right'); ?> <?php echo bloginfo('name' ); ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/normalize.css">
 
 	<?php wp_head();  ?>
